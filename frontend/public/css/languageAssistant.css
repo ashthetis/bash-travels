@@ -6,6 +6,8 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    font-family: 'Nunito', sans-serif;
+
 }
 .container {
     max-width: 600px;
@@ -68,7 +70,6 @@ body {
     }
 }
 
-/* Navbar Styling */
 .navbar {
     background: rgba(255, 255, 255, 0.9) !important;
     backdrop-filter: blur(10px);
@@ -77,6 +78,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 1000;
+    
 }
 
 .navbar-brand {
@@ -84,6 +86,7 @@ body {
     color: #000;
     font-size: 1rem;
     text-transform: uppercase;
+
     
 }
 
@@ -93,7 +96,7 @@ body {
     color: #333 !important;
     padding: 10px 15px;
     transition: color 0.3s ease-in-out;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .navbar-nav .nav-link:hover {
@@ -104,4 +107,5 @@ body {
     border: none;
     font-size: 1.2rem;
     padding: 8px 10px;
+    
 }
