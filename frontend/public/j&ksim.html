@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubigi & Airalo eSIMs for Japan & Korea</title>
+    
+    <!-- Bootstrap & Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Background Styling */
+        body {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.8) 75%, #000 100%), 
+                        url('./assets/images/j&k5.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            margin-top: 80px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 30px;
+            color: black;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Back Button */
+        .back-button {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.4);
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .back-button:hover {
+            background: rgba(0, 0, 0, 0.6);
+            transform: scale(1.05);
+        }
+
+        /* Video Section */
+        .video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+        }
+
+        /* Info Cards */
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%; /* Make all buttons equal width */
+    padding: 12px; /* Make them visually consistent */
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.02); /* Slight hover effect */
+}
+
+        /* List Styling */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        ul li i {
+            color: #007bff;
+            margin-right: 5px;
+        }
+
+           /* Navbar Styling */
+           .navbar {
+            background: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: #000;
+            font-size: 1rem;
+            text-transform: uppercase;
+            
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 16px;
+            font-weight: 500;
+            color: #333 !important;
+            padding: 10px 15px;
+            transition: color 0.3s ease-in-out;
+            margin-right: 20px;
+
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff !important;
+        }
+
+        .navbar-toggler {
+            border: none;
+            font-size: 1.2rem;
+            padding: 8px 10px;
+        }
+
+        /* Ensure content doesn't overlap with navbar */
+        .content-container {
+            padding-top: 120px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-12 text-start">
+                <a href="./previous-page.html" class="back-button">← Back</a>
+            </div>
+        </div> -->
+        <!-- Navigation -->
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-0 me-auto" href="./japanKoreaTrip.html">BASH TRAVELS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="./japanKoreaTrip.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./japanKoreaTrip.html#currencyConverter">Currency</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./japanKoreaTrip.html#languageAssistant">Translator</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./j&kplan.html">Itinerary</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./j&ksim.html">eSIM's</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./j&ktransport.html">Transport</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./japanKoreaApps.html">Resources</a></li>
+                    </ul>
+    </div>
+</nav>
+<br>
+
+        <div class="overlay">
+            
+            <h1 class="text-center"><b>SIM & WiFi</b></h1>
+
+            <!-- Video Section -->
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/9t-ubj4jNps" allowfullscreen></iframe>
+            </div>
+
+            <!-- Ubigi Section -->
+            <!-- <h2 class="text-center">Ubigi eSIM</h2> -->
+            <div class="card">
+                <h3><img src="./assets/images/j&kubigi.jpg" alt="Ubigi eSIM" class="me-2" width="40">Ubigi</h3>
+                <p>Ubigi offers affordable and seamless connectivity for Japan and South Korea. Stay connected without switching your physical SIM card.</p>
+
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> <b>Fast mobile data in Japan & Korea</b></li>
+                    <li><i class="fas fa-check-circle"></i> <b>Works without a physical SIM swap</b></li>
+                    <li><i class="fas fa-check-circle"></i> <b>Plans available for multiple regions</b></li>
+                </ul>
+
+                <p><strong>💡 Popular Plans:</strong></p>
+                <ul>
+                    <li><i class="fas fa-wifi"></i> <a href="https://cellulardata.ubigi.com/data-plans-and-coverage/ubigi-esim-data-plans/?destination=jpn&region=&currency=USD&one-off=on&origin=hp#table-plans-view">Japan: Plans & prices</a></li>
+                    <li><i class="fas fa-wifi"></i> <a href="https://cellulardata.ubigi.com/data-plans-and-coverage/ubigi-esim-data-plans/?destination=kor&region=&currency=USD&one-off=on#ubigi-destination">South Korea: Plans & prices</a></li>
+                    <li><i class="fas fa-globe"></i> <a href="https://cellulardata.ubigi.com/data-plans-and-coverage/ubigi-esim-data-plans/?destination=&region=asia&currency=USD&one-off=on#ubigi-destination">Asia Regional Plan: Covers multiple countries</a></li>
+                </ul>
+
+                <a href="https://cellulardata.ubigi.com/" class="btn btn-primary" target="_blank">Sign Up for Ubigi</a>
+            </div>
+
+            <!-- Airalo Section -->
+            <!-- <h2 class="text-center">Airalo eSIM</h2> -->
+            <div class="card">
+                <h3><img src="./assets/images/j&kairalo.jpg" alt="Airalo eSIM" class="me-2" width="40">Airalo</h3>
+                <p>Airalo provides data-only eSIM's for travelers in Japan and South Korea. Easily top up via the Airalo app.</p>
+
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> <b>Prepaid, no contracts required</li>
+                    <li><i class="fas fa-check-circle"></i> <b>Easy top-ups via the Airalo app</b></li>
+                    <li><i class="fas fa-check-circle"></i> <b>Affordable plans for short trips</b></li>
+                </ul>
+
+                <p><strong>💡 Popular Plans:</strong></p>
+                <ul>
+                    <li><i class="fas fa-wifi"></i><a href="https://www.airalo.com/japan-esim"> Japan Plans</a></li>
+                    <li><i class="fas fa-wifi"></i><a href="https://www.airalo.com/south-korea-esim"> South Korea Plans</a></li>
+                    <li><i class="fas fa-globe"></i><a href="https://www.airalo.com/asia-esim"> Asia Regional Plan: Includes both Japan, Korea & more.</a></li>
+                </ul>
+
+                <a href="https://www.airalo.com/" class="btn btn-primary" target="_blank">Sign Up for Airalo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

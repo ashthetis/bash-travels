@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Japan & Korea Trip</title>
+        <!-- <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" /> -->
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="./css/japanKoreaTrip.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5" >
+                <a class="navbar-brand" href="./japanKoreaTrip.html">BASH TRAVELS</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="./japanKoreaTrip.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./japanKoreaTrip.html#currencyConverter">Currency</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./japanKoreaTrip.html#languageAssistant">Translator</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./j&kplan.html">Itinerary</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./j&ksim.html">eSIM's</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./j&ktransport.html">Transport</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./japanKoreaApps.html">Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <!-- <header class="masthead" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 75%, #000 100%), 
+                url('./assets/images/j&k5.jpg');">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Japan & Korea Trip</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Pillai's Take On Japan & Korea</h2> -->
+                        <!-- <a class="btn btn-primary" href="#about">Information</a> -->
+                        
+                    <!-- </div>
+                </div>
+            </div>
+        </header> -->
+
+        <header class="masthead" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 75%, #000 100%), 
+                url('./assets/images/j&k5.jpg'); background-size: cover; background-position: center;">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <h1 class="mx-auto my-0 text-uppercase">Japan & Korea Trip</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-4">Pillai's Take On Japan & Korea</h2>
+                
+                <!-- Search Bar -->
+                <div class="search-container mx-auto">
+                    <input type="text" id="searchInput" class="search-bar" placeholder="Ask AI a travel question...">
+                    <button class="search-btn" onclick="getAIResponse()">🔍</button>
+                </div>
+
+                <!-- AI Response Output -->
+                <div id="aiResponse" class="response-box mt-3"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">A Legendary Bender Across Japan & Korea</h2>
+                        <p class="text-white-50">
+                            Join the BASH group and brace yourselves for an adventure fueled by ramen, BBQ, late-night karaoke, and questionable life choices. From Tokyo’s neon streets to Seoul’s soju-fueled nights, we’re eating, drinking, and vibing our way through two of the most epic destinations on the planet. Will we master the art of chopsticks? Will our wallets survive the endless shopping? Will we make it to our morning flights? Only time (and our Instagram stories) will tell
+                            tell!
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">    
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" id="currencyConverter">
+                    <div class="col-lg-6"><a href="./japanKoreaCurrConverter.html"><img class="img-fluid" src="./assets/images/j&kcur.jpg" alt="..."/></a></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <a href="./japanKoreaCurrConverter.html"><h4 class="text-white">Currency Converter</h4></a>
+                                    <p class="mb-0 text-white-50">Easily convert USD, JPY, and KRW so you know exactly how much you lost.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row gx-0 justify-content-center" id="languageAssistant">
+                    <div class="col-lg-6"><a href="./languageAssistant.html"><img class="img-fluid" src="./assets/images/j&klang.jpg" style="height: auto; object-fit: cover;" alt="..." /></a></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right">
+                                    <a href="./languageAssistant.html"><h4 class="text-white">Language Assistant</h4></a>
+                                    <p class="mb-0 text-white-50">Your Pocket Translator: Just type, translate, and even hear it out loud—because saying it wrong is half the fun!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0" id="plan">
+                        <div class="card py-4 h-100">
+                            <a href="./j&kplan.html"><div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Itinerary</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">Our Plans For The Trip</div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0" id="trasport">
+                        <div class="card py-4 h-100">
+                            <a href="./j&ktrasport.html"><div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Transport</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">Local Transportation.</div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0" id="sim">
+                        <a href="./j&ksim.html"><div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">SIM & WiFi</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">Internet Options</div>
+                            </div>
+                        </a>
+                        
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Bash Travels </div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="./js/main.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

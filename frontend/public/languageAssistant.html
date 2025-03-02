@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="./css/languageAssistant.css" rel="stylesheet">
+</head>
+    <body style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.8) 75%, #000 100%), 
+             url('./assets/images/j&k5.jpg'); 
+             background-size: cover; background-position: center; background-attachment: fixed;">
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+        <!-- Left-aligned Brand -->
+        <a class="navbar-brand ms-0 me-auto" href="./japanKoreaTrip.html">BASH TRAVELS</a>
+
+        <!-- Toggler Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <!-- Default Bootstrap Hamburger Icon -->
+        </button>
+
+        <!-- Right-aligned Navigation Items -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="./japanKoreaTrip.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="./japanKoreaTrip.html#currencyConverter">Currency</a></li>
+                <li class="nav-item"><a class="nav-link" href="./japanKoreaTrip.html#languageAssistant">Translator</a></li>
+                <li class="nav-item"><a class="nav-link" href="./j&kplan.html">Itinerary</a></li>
+                <li class="nav-item"><a class="nav-link" href="./j&ksim.html">eSIM's</a></li>
+                <li class="nav-item"><a class="nav-link" href="./j&ktransport.html">Transport</a></li>
+                <li class="nav-item"><a class="nav-link" href="./japanKoreaApps.html">Resources</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="container" style="padding-top: 0px;">
+        <!-- <a href="./japanKoreaTrip.html" class="back-button">← Back</a> -->
+
+        <div class="overlay">
+            <h2 class="text-center mb-4" style="padding-top: 0px;">Language Assistant</h2>
+            <div class="mt-4">
+                <button class="btn gradient-btn w-100" type="button" data-bs-toggle="collapse" data-bs-target="#commonPhrases">
+                    Show Common Phrases
+                </button>
+                <div id="commonPhrases" class="collapse mt-3">
+                    <div class="card card-body">
+                        <h5>English → Japanese</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">Hello → こんにちは (Konnichiwa)</li>
+                            <li class="list-group-item">Thank you → ありがとう (Arigatou)</li>
+                            <li class="list-group-item">Goodbye → さようなら (Sayōnara)</li>
+                            <li class="list-group-item">
+                                My wife is allergic to all nuts like peanuts or cashew nuts, shellfish like crab, oysters, etc., and coconut. Please make sure it's not in the food or she could die. 
+                                → 私の妻は、ピーナッツやカシューナッツなどのナッツ類、カニや牡蠣などの甲殻類、ココナッツにアレルギーがあります。食べ物に含まれていないことを確認してください。命に関わる可能性があります。  
+                                (Watashi no tsuma wa, pīnattsu ya kashūnattsu nado no nattsurui, kani ya kaki nado no kōkakurui, kokonattsu ni arerugī ga arimasu. Tabemono ni fukumarete inai koto o kakunin shite kudasai. Inochi ni kakawaru kanōsei ga arimasu.)
+                            </li>
+                        </ul>
+            
+                        <h5 class="mt-3">English → Korean</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">Hello → 안녕하세요 (Annyeonghaseyo)</li>
+                            <li class="list-group-item">Thank you → 감사합니다 (Gamsahamnida)</li>
+                            <li class="list-group-item">Goodbye → 안녕 (Annyeong)</li>
+                            <li class="list-group-item">
+                                My wife is allergic to all nuts like peanuts or cashew nuts, shellfish like crab, oysters, etc., and coconut. Please make sure it's not in the food or she could die. → 제 아내는 땅콩이나 캐슈넛 같은 모든 견과류, 게나 굴 같은 갑각류, 그리고 코코넛에 알레르기가 있습니다. 음식에 포함되지 않았는지 꼭 확인해 주세요. 생명에 위협이 될 수 있습니다.  
+                                (Je anaeneun ttangkong-ina kaesyuneot gateun modeun gyeongwalyu, gena gul gateun gabgakryu, geurigo kokoneot-e alleleugi-ga isseumnida. Eumsig-e pohamdoeji anassneunji kkok hwaginhae juseyo. Saengmyeong-e wihyeobi doel su issseumnida.)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="card shadow p-4">
+                <div class="mb-3">
+                    <label for="inputText" class="form-label">Enter Text:</label>
+                    <textarea id="inputText" class="form-control" rows="3" placeholder="Type here..."></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="languageSelect" class="form-label">Select Language:</label>
+                    <select id="languageSelect" class="form-select">
+                        <option value="en|ja">English → Japanese</option>
+                        <option value="ja|en">Japanese → English</option>
+                        <option value="en|ko">English → Korean</option>
+                        <option value="ko|en">Korean → English</option>
+                    </select>
+                </div>
+                <button class="translate btn btn-primary w-100">Translate</button>
+            </div>
+            <div class="mt-4 card shadow p-4">
+                <h5>Translation:</h5>
+                <textarea id="translatedText" class="form-control bg-white border rounded" rows="2" readonly></textarea>
+                <button class="speak btn btn-secondary mt-2 w-100">🔊 Hear Pronunciation</button>
+            </div>
+
+            <!-- Collapsible Common Phrases -->
+            <!-- Collapsible Common Phrases -->
+
+        </div>
+    </div>
+    <script src="./js/languageAssistant.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

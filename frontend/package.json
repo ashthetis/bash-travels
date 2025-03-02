@@ -1,0 +1,12 @@
+{
+    "name": "bash-travels-frontend",
+    "version": "1.0.0",
+    "description": "Static frontend for Bash Travels",
+    "scripts": {
+      "start": "live-server public"
+    },
+    "devDependencies": {
+      "live-server": "^1.2.1"
+    }
+  }
+  

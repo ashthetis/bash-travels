@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASH TRAVELS - Transport</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.8) 75%, #000 100%), 
+                        url('./assets/images/j&k5.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+            color: white;
+            margin-top: 20px;
+        }
+        .container {
+            padding-top: 80px;
+        }
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 20px;
+            color: black;
+            box-shadow: 0px 4px 10px rgba(214, 210, 0.1);
+        }
+        .gradient-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+        }
+        .gradient-btn:hover {
+            background: linear-gradient(135deg, #7f6bff, #a5848b);
+            transform: scale(1.05);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+           /* Navbar Styling */
+.navbar {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #000;
+    font-size: 1rem;
+    text-transform: uppercase;
+    
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333 !important;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.2rem;
+    padding: 8px 10px;
+}
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-0 me-auto" href="./japanKoreaTrip.html">BASH TRAVELS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="./japanKoreaTrip.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="./japanKoreaTrip.html#currencyConverter">Currency</a></li>
+                <li class="nav-item"><a class="nav-link" href="./japanKoreaTrip.html#languageAssistant">Translator</a></li>
+                <li class="nav-item"><a class="nav-link" href="./j&kplan.html">Itinerary</a></li>
+                <li class="nav-item"><a class="nav-link" href="./j&ksim.html">SIM & WiFi</a></li>
+                <li class="nav-item"><a class="nav-link" href="./j&ktransport.html">Transport</a></li>
+                <li class="nav-item"><a class="nav-link" href="./japanKoreaApps.html">Resources</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="overlay">
+        <h2 class="text-center mb-4">Japan & Korea 2025 - Transport</h2>
+
+        <!-- JAPAN TRANSPORT -->
+        <button class="btn gradient-btn w-100 mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#japanTransport">
+            🇯🇵 Japan Transport Guide
+        </button>
+        <div id="japanTransport" class="collapse">
+            <div class="card card-body">
+                <h5 class="text-center">🚆 How to Use Public Transport in Japan</h5>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/mZqrVpQLRbk" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p class="mt-3">Japan's transport system includes bullet trains (Shinkansen), subways, and buses. Make sure to get a Suica or Pasmo card for convenient travel.</p>
+            </div>
+        </div>
+
+        <!-- SOUTH KOREA TRANSPORT -->
+        <button class="btn gradient-btn w-100 mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#koreaTransport">
+            🇰🇷 South Korea Transport Guide
+        </button>
+        <div id="koreaTransport" class="collapse">
+            <div class="card card-body">
+                <h5 class="text-center">🚇 How to Use Public Transport in Korea</h5>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/fzbmJZ21NOU" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p class="mt-3">South Korea's transport system includes a T-Money card, subways, and express buses. The subway system is one of the most efficient in the world!</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
