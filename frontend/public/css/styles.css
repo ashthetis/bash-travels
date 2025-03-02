@@ -11317,3 +11317,29 @@ body {
   margin: 0 auto; /* Center the response box */
 }
 
+.sample-questions {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  font-size: 16px;
+  color: #ddd;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: smoothScroll 20s linear infinite;
+}
+
+@keyframes smoothScroll {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}

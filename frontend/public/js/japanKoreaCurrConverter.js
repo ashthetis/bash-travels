@@ -26,5 +26,5 @@ convertButton.addEventListener("click", async function (){
 );
 
 backButton.addEventListener("click", function (){
-    window.location.href = './japanKoreaTrip.html';
+    window.location.href = './index.html';
 });
