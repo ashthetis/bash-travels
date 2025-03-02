@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="frontend/projectDemo1.png" alt="Project Demo 1" width="300" height="300"/>
-  <img src="frontend/projectDemo2.png" alt="Project Demo 2" width="400" height="300"/>
+  <img src="frontend/projectDemo2.png" alt="Project Demo 2" width="500" height="300"/>
 </p>
 
 ## **🌍 About the Project**
