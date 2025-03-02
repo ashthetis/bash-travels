@@ -2,8 +2,8 @@
 
 *A full-stack web app designed to simplify travel planning for Japan & Korea.*
 
-![Project Demo 1](../frontend/public/assets/images/projectDemo1.png)
-![Project Demo 2](../frontend/public/assets/images/projectDemo2.png)
+![Project Demo 1](../frontend/projectDemo1.png)
+![Project Demo 2](../frontend/projectDemo2.png)
 
 ## **🌍 About the Project**
 
