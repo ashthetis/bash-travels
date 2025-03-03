@@ -30,42 +30,43 @@ body {
     font-size: 24px;
 }
 
-.navbar {
-    background: rgba(255, 255, 255, 0.9) !important;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 15px 20px;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    
-}
-
-.navbar-brand {
-    font-weight: 700;
-    color: #000;
-    font-size: 1rem;
-    text-transform: uppercase;
-
-    
-}
-
-.navbar-nav .nav-link {
-    font-size: 16px;
-    font-weight: 500;
-    color: #333 !important;
-    padding: 10px 15px;
-    transition: color 0.3s ease-in-out;
-    margin-right: 40px;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #007bff !important;
-}
-
-.navbar-toggler {
-    border: none;
-    font-size: 1.2rem;
-    padding: 8px 10px;
-    
-}
+           /* Navbar Styling */
+           .navbar {
+            background: rgba(255, 255, 255, 0.9) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: #000;
+            font-size: 1rem;
+            text-transform: uppercase;
+        
+            
+        }
+        
+        .navbar-nav .nav-link {
+            font-size: 16px;
+            font-weight: 500;
+            color: #333 !important;
+            padding: 10px 15px;
+            transition: color 0.3s ease-in-out;
+            margin-right: 40px;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: #007bff !important;
+        }
+        
+        .navbar-toggler {
+            border: none;
+            font-size: 1.2rem;
+            padding: 8px 10px;
+            
+        }
