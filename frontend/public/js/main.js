@@ -1,4 +1,4 @@
-
+window.getAIResponse = getAIResponse;
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -45,6 +45,10 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+const SUPABASE_API_URL = window.location.hostname.includes("localhost")
+    ? "http://localhost:3000/api/supabaseHandler"
+    : "https://bash-travels.vercel.app/api/supabaseHandler";
+
 // Define API URLs for OpenAI and Nearby Places
 const API_URL = window.location.hostname.includes("localhost")
     ? "http://localhost:5001/api/openai"  // Local Development
@@ -71,8 +75,27 @@ async function getAIResponse() {
         return;
     }
 
+    
+    // Track the question in Supabase
+     // Track the question in Supabase
+    //  try {
+    //     await fetch('/api/supabaseHandler', {
+    //         method: 'POST',
+    //         headers: { "Content-Type": "application/json" },
+    //         body: JSON.stringify({ question: query }) // ✅ Logs the question to Supabase
+    //     });
+    // } catch (error) {
+    //     console.error("Error logging question:", error);
+    // }
+    // await logUserQuestion(query); // Logs each query to Supabase
+
+
+
     responseBox.innerHTML = "Bash AI is Thinking... 💭";
     responseBox.style.display = "block";
+
+    // Track the question in Supabase
+    await trackQuestion(query);
 
     // Detect if the user wants to find nearby places
     if (query.includes("nearest") || query.includes("nearby") || query.includes("find me") || query.includes("find")) {
@@ -130,6 +153,37 @@ async function fetchAIResponse(query) {
     }
 }
 
+async function trackQuestion(question) {
+    try {
+        await fetch('/api/supabaseHandler', {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ question })
+        });
+        console.log("Question tracked successfully");
+    } catch (error) {
+        console.error("Error tracking question:", error);
+    }
+}
+
+
+async function logUserQuestion(question) {
+    try {
+        const response = await fetch(SUPABASE_API_URL, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ question })
+        });
+
+        if (!response.ok) {
+            console.error("Error logging question:", response.statusText);
+        }
+    } catch (error) {
+        console.error("Error connecting to Supabase:", error);
+    }
+}
+
+
 // Function to find nearby places using OpenStreetMap's Overpass API
 async function findNearbyPlaces(placeType) {
     if (!navigator.geolocation) {
@@ -179,3 +233,5 @@ document.getElementById("searchInput").addEventListener("keypress", function (ev
         getAIResponse();
     }
 });
+
+

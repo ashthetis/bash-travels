@@ -1,10 +1,13 @@
 {
   "builds": [
     { "src": "api/openai.js", "use": "@vercel/node" },
+    { "src": "api/supabaseHandler.js", "use": "@vercel/node" },
     { "src": "public/**/*", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/openai.js" },
+    { "src": "/api/openai", "dest": "/api/openai.js" },
+    { "src": "/api/supabaseHandler", "dest": "/api/supabaseHandler.js" },
     { "src": "/(.*)", "dest": "/public/$1" }
   ]
 }
+
