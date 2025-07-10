@@ -1,6 +1,7 @@
-# **Bash Travels ✈️ – AI-Powered Travel Companion**
+[![Video Demo Of App](https://img.youtube.com/vi/rpbylbmUmYM/0.jpg)](https://www.youtube.com/watch?v=rpbylbmUmYM)
 
-[![Watch the video](https://img.youtube.com/vi/rpbylbmUmYM/maxresdefault.jpg)](https://youtu.be/rpbylbmUmYM)
+
+# **Bash Travels ✈️ – AI-Powered Travel Companion**
 
 *A full-stack web app designed to simplify travel planning for Japan & Korea.*
 
